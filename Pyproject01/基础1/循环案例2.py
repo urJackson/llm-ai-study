@@ -1,6 +1,6 @@
 # 猜数字
 import random
-rn = random.randint(1,10)
+rn = random.randint(1,100)
 if rn % 2 == 0:
     print("提示：————该数字是偶数————")
 else:
@@ -10,5 +10,7 @@ while True:
     if num == rn:
         print("恭喜你猜对了！")
         break
+    elif num > rn:
+        print("你猜的数字太大了，请再猜一遍吧。")
     else:
-        print("你猜错了，请再猜一遍吧。")
+        print("你猜的数字太小了，请再猜一遍吧。")
